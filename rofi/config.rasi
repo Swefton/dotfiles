@@ -1,0 +1,9 @@
+configuration {
+	show-icons: true;
+	font: "Cousine Nerd Font 11.5";
+	modi: "drun,run";
+}
+
+@theme "/usr/share/rofi/themes/purple.rasi"
+
+
