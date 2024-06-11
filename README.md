@@ -6,6 +6,7 @@ All my arch installation files and configurations to reproduce the installation.
 * display manager: ly
 * polybar
 * rofi
+* picom
 
 # Packages
 * alsa

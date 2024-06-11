@@ -25,6 +25,7 @@ gaps outer 1
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
+exec --no-startup-id picom -b
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -191,7 +192,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
 #set wallpaper
-exec_always --no-startup-id feh --bg-scale ~/Downloads/wallpaper.jpg
+exec_always --no-startup-id feh --bg-scale ~/.config/i3/wallpapers/city.jpg
 
 #colors maybe
 
