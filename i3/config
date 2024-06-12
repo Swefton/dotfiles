@@ -192,7 +192,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
 #set wallpaper
-exec_always --no-startup-id feh --bg-scale ~/.config/i3/wallpapers/city.jpg
+exec_always --no-startup-id feh --bg-scale ~/.config/i3/wallpapers/river.png
 
 #colors maybe
 
