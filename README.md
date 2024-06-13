@@ -20,3 +20,7 @@ All my arch installation files and configurations to reproduce the installation.
 * alacritty
 * firefox
 * tlp
+
+# Fonts
+* nerdfonts JetBrains
+* nerdfonts Cousine
