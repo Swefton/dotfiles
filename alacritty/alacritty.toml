@@ -22,6 +22,8 @@ padding.y = 10
 decorations = "Full"
 decorations_theme_variant = "Dark"
 
+
+
 [font]
 
 normal.family = "Cousine Nerd Font Mono"
@@ -29,7 +31,7 @@ bold.family = "Cousine Nerd Font Mono"
 italic.family = "Cousine Nerd Font Mono"
 bold_italic.family = "Cousine Nerd Font Mono"
 
-size = 9.0
+size = 12.0
 
 
 # Normal colors

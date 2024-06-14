@@ -2,11 +2,12 @@
 All my arch installation files and configurations to reproduce the installation.
 
 # Desktop Environment
-* window manager: i3wm
+* window manager: swayfx
 * display manager: ly
-* polybar
+* eww
 * rofi
-* picom
+* alacritty
+* zsh
 
 # Packages
 * alsa
@@ -17,9 +18,9 @@ All my arch installation files and configurations to reproduce the installation.
 * github-cli
 * gvim
 * neofetch
-* alacritty
 * firefox
 * tlp
+* btop
 
 # Fonts
 * nerdfonts JetBrains
