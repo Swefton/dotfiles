@@ -5,7 +5,7 @@ All my arch installation files and configurations to reproduce the installation.
 * window manager: swayfx
 * display manager: ly
 * eww
-* rofi
+* rofi-wayland
 * alacritty
 * zsh
 
