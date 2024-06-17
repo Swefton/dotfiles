@@ -4,7 +4,7 @@ All my arch installation files and configurations to reproduce the installation.
 # Desktop Environment
 * window manager: swayfx
 * display manager: ly
-* eww
+* waybar
 * rofi-wayland
 * alacritty
 * zsh
@@ -12,6 +12,7 @@ All my arch installation files and configurations to reproduce the installation.
 # Packages
 * alsa
 * pulseaudio
+* pulseaudio-ctl
 * pavucontrol
 * poweru
 * git
@@ -21,6 +22,10 @@ All my arch installation files and configurations to reproduce the installation.
 * firefox
 * tlp
 * btop
+* spotify
+* visual-studio-code-bin
+* yay
+* brightnessctl
 
 # Fonts
 * nerdfonts JetBrains
