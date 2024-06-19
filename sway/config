@@ -72,6 +72,13 @@ output DP-1 {
 
 }
 
+set $laptop eDP-1
+# bindswitch --reload --locked lid:on output $laptop disable
+bindswitch --reload --locked lid:on exec ~/.config/sway/todocked.sh
+
+# bindswitch --reload --locked lid:off output $laptop enable
+bindswitch --reload --locked lid:off exec ~/.config/sway/tolaptop.sh
+
 # Sway autoexec
 set $schema "org.gnome.desktop.interface"
 
@@ -103,16 +110,18 @@ bindsym XF86MonBrightnessDown exec brightnessctl s 1%-
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 
-### Input configuration
-#
-# Example configuration:
-#
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
+## Input configuration
+
+input "type:touchpad" {
+      dwt enabled
+      tap enabled
+      natural_scroll enabled
+      middle_emulation enabled
+  }
+
+input "1133:49278:Logitech_Gaming_Mouse_G402" {
+      natural_scroll enabled
+  }
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
@@ -260,19 +269,6 @@ bindsym $mod+r mode "resize"
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-# bar {
-#     position top
-
-#     # When the status_command prints a new line to stdout, swaybar updates.
-#     # The default just shows the current date and time.
-#     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-
-#     colors {
-#         statusline #ffffff
-#         background #323232
-#         inactive_workspace #32323200 #32323200 #5c5c5c
-#     }
-# }
 
 bar {
     swaybar_command waybar
@@ -282,7 +278,7 @@ bar {
 
 #colors maybe
 # class                 border  bground text    indicator child_border
-client.focused          #CF9FFF #36013F #F8F8F2 #36013F   #36003F
+client.focused          #ff79c6	#36013F #F8F8F2 #36013F   #36003F
 client.focused_inactive #44475A #36013F	#F8F8F2 #44475A   #44475A
 client.unfocused        #282A36 #36013F #BFBFBF #282A36   #282A36
 client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555

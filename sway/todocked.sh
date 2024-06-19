@@ -1,0 +1,1 @@
+wlr-randr --output eDP-1 --off ; killall waybar ; waybar -c ~/.config/waybar/docked

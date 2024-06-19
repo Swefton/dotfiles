@@ -20,12 +20,14 @@ All my arch installation files and configurations to reproduce the installation.
 * gvim
 * neofetch
 * firefox
-* tlp
+* powertop
+* auto-cpufreq
 * btop
 * spotify
 * visual-studio-code-bin
 * yay
 * brightnessctl
+* wlr-randr
 
 # Fonts
 * nerdfonts JetBrains
