@@ -28,6 +28,9 @@ All my arch installation files and configurations to reproduce the installation.
 * yay
 * brightnessctl
 * wlr-randr
+* NCDU
+* swayidle
+* swaylock-effects
 
 # Fonts
 * nerdfonts JetBrains
