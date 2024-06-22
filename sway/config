@@ -88,6 +88,7 @@ exec_always {
     #gsettings set $schema cursor-theme Yaru
     gsettings set $schema gtk-application-prefer-dark-theme true
     gsettings set $scheme gtk-font-name Cousine Nerd Font 6
+    copyq --start-server
 }
 
 bindsym XF86AudioMute exec pulseaudio-ctl mute 
@@ -138,8 +139,13 @@ input $laptopdisplay-touch map_to_output $laptopdisplay
 
     # Start your launcher
     bindsym $mod+d exec $menu
+	
+    # screenshot
+    bindsym Print exec grim -g "$(slurp -w 0)" - | wl-copy
 
-    # Drag floating windows by holding down $mod and left mouse button.
+    bindsym $mod+x exec "copyq menu"
+    
+# Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
     # Change normal to inverse to use left mouse button for resizing and right
