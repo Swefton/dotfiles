@@ -6,7 +6,7 @@ All my arch installation files and configurations to reproduce the installation.
 * display manager: ly
 * waybar
 * rofi-wayland
-* alacritty
+* kitty 
 * zsh
 
 # Packages
@@ -31,7 +31,19 @@ All my arch installation files and configurations to reproduce the installation.
 * NCDU
 * swayidle
 * swaylock-effects
+* grim
+* slurp
+* wl-copy
+
 
 # Fonts
 * nerdfonts JetBrains
 * nerdfonts Cousine
+
+# TO DO
+[ ] fix clipboard history
+[ ] add screenshot saving
+[ ] spotift waybar
+[ ] better lid close sleep
+[ ] power button actually does something
+[ ] spicetify

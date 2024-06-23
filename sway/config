@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term kitty
 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
@@ -73,10 +73,8 @@ output DP-1 {
 }
 
 set $laptop eDP-1
-# bindswitch --reload --locked lid:on output $laptop disable
-bindswitch --reload --locked lid:on exec ~/.config/sway/todocked.sh
 
-# bindswitch --reload --locked lid:off output $laptop enable
+bindswitch --reload --locked lid:on exec ~/.config/sway/todocked.sh
 bindswitch --reload --locked lid:off exec ~/.config/sway/tolaptop.sh
 
 # Sway autoexec
@@ -143,6 +141,10 @@ input $laptopdisplay-touch map_to_output $laptopdisplay
     # screenshot
     bindsym Print exec grim -g "$(slurp -w 0)" - | wl-copy
 
+    # lock
+    bindsym $mod+p exec swaylock -f -c ~/.config/swaylock/config
+	
+    # WIP
     bindsym $mod+x exec "copyq menu"
     
 # Drag floating windows by holding down $mod and left mouse button.
