@@ -68,7 +68,8 @@ window#waybar.hidden {
 }
 
 #custom-weather {
-    padding-right: 16px;
+    margin-right: 0px;
+    padding-right: 8px;
     border-radius: 0px 10px 10px 0px;
     transition: none;
     color: #ffffff;
@@ -76,7 +77,7 @@ window#waybar.hidden {
 }
 
 #custom-waybar-mpris {
-    margin-right: 4px;
+    margin-right: 25px;
     padding-left: 16px;
     padding-right: 8px;
     border-radius: 10px;
