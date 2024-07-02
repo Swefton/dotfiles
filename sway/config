@@ -140,6 +140,8 @@ input $laptopdisplay-touch map_to_output $laptopdisplay
 	
     # screenshot
     bindsym Print exec grim -g "$(slurp -w 0)" - | wl-copy
+    bindsym $mod+Print exec grim -g "$(slurp -w 0)" ~/Pictures/Screenshots/$(date +%Y-%m-%d-%H-%M-%S).png
+    bindsym $mod+Shift+Print exec grim -o eDP-1 ~/Pictures/Screenshots/$(date +%Y-%m-%d-%H-%M-%S).png
 
     # lock
     bindsym $mod+p exec swaylock -f -c ~/.config/swaylock/config

@@ -42,7 +42,7 @@ window#waybar.hidden {
     text-shadow: inherit;
     border-radius: inherit;
     color: #383c4a;
-    background: #7c818c;
+    background: #ff79c6;
 }
 
 #workspaces button.focused {

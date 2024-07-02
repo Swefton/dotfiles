@@ -2,9 +2,10 @@
 All my arch installation files and configurations to reproduce the installation.
 
 # Screenshots
-![1](screenshots/1.png)
-![2](screenshots/2.png)
-![3](screenshots/3.png)
+![desktop](screenshots/multipannel.png)
+![vscode](screenshots/vscode.png)
+![neofetch](screenshots/neofetch.png)
+![rofi](screenshots/rofi.png)
 
 # Desktop Environment
 * window manager: swayfx
@@ -29,14 +30,14 @@ All my arch installation files and configurations to reproduce the installation.
 * visual-studio-code-bin
 * yay
 * wlr-randr
-* NCDU
+* mc
 * swayidle
 * swaylock-effects
 * grim
 * slurp
 * wl-copy
 
-Laptop specific
+## Laptop Specific
 * poweru
 * powertop
 * auto-cpufreq
