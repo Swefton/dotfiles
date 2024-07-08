@@ -9,7 +9,7 @@
     // "width": 1280, // Waybar width
     // Choose the order of the modules
     "output": "eDP-1",
-    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-left": ["hyprland/workspaces", "sway/mode"],
     "modules-center": ["clock", "custom/weather"],
     "modules-right": ["custom/waybar-mpris", "network","pulseaudio", "backlight", "upower"],
 
@@ -18,7 +18,7 @@
     //*  Modules configuration  *
     //***************************
 
-    "sway/workspaces": {
+    "hyprland/workspaces": {
         "disable-scroll": true,
         "min-width": 13
     },
@@ -30,9 +30,9 @@
     "custom/waybar-mpris": {
         "return-type": "json",
         "exec": "waybar-mpris --position --autofocus --order SYMBOL:TITLE:ARTIST --pause  --play ",
-        "on-click": "waybar-mpris --send toggle",
+        "on-click": "ags",
         // This option will switch between players on right click.
-        "on-click-right": "waybar-mpris --send next",
+        "on-click-right": "killall ags",
         // The options below will switch the selected player on scroll
             // "on-scroll-up": "waybar-mpris --send player-next",
             // "on-scroll-down": "waybar-mpris --send player-prev",
@@ -109,20 +109,21 @@
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     // "height": 30, // Waybar height (to be removed for auto height)
-    "margin-left": 12,
     "margin-bottom": 0,
-    "margin-top": 2,
+    "margin-top": 5,
+    "margin-left": 12,
+    "margin-right": 8,
     // "width": 1280, // Waybar width
     // Choose the order of the modules
     "output": "DP-1",
 
-    "modules-left": ["sway/workspaces"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock", "custom/weather"],
     "modules-right": ["custom/waybar-mpris"],
 
-    "sway/workspaces": {
-       "disable-scroll": true,
-       "window-rewrite": {}
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "min-width": 13
     },
 
     "clock": {

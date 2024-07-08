@@ -8,7 +8,7 @@ All my arch installation files and configurations to reproduce the installation.
 ![rofi](screenshots/rofi.png)
 
 # Desktop Environment
-* window manager: swayfx
+* window manager: hyprland
 * display manager: ly
 * waybar
 * rofi-wayland
@@ -36,6 +36,8 @@ All my arch installation files and configurations to reproduce the installation.
 * grim
 * slurp
 * wl-copy
+* ags
+* imv
 
 ## Laptop Specific
 * poweru
