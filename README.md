@@ -11,6 +11,7 @@ All my arch installation files and configurations to reproduce the installation.
 * window manager: hyprland
 * display manager: ly
 * waybar
+* ags
 * rofi-wayland
 * kitty 
 * zsh
@@ -36,7 +37,6 @@ All my arch installation files and configurations to reproduce the installation.
 * grim
 * slurp
 * wl-copy
-* ags
 * imv
 
 ## Laptop Specific

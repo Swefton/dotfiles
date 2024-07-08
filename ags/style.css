@@ -1,6 +1,9 @@
 .player {
     padding: 10px;
     min-width: 350px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid @theme_selected_bg_color;
 }
 
 .player .img {
@@ -31,7 +34,7 @@
 }
 
 .player scale.position highlight {
-    background-color: @theme_fg_color;
+    background-color: @theme_selected_bg_color;
 }
 
 .player scale.position slider {
@@ -46,4 +49,8 @@
 
 .player button.play-pause {
     margin: 0 .3em;
+}
+
+.calendar {
+    border: 1px solid @theme_selected_bg_color;
 }

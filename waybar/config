@@ -9,7 +9,7 @@
     // "width": 1280, // Waybar width
     // Choose the order of the modules
     "output": "eDP-1",
-    "modules-left": ["hyprland/workspaces", "sway/mode"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock", "custom/weather"],
     "modules-right": ["custom/waybar-mpris", "network","pulseaudio", "backlight", "upower"],
 
@@ -23,15 +23,12 @@
         "min-width": 13
     },
 
-    "sway/mode": {
-        "format": "󰢹 {}"
-    },
 
     "custom/waybar-mpris": {
         "return-type": "json",
-        "exec": "waybar-mpris --position --autofocus --order SYMBOL:TITLE:ARTIST --pause  --play ",
+        "tooltip": false,
+        "exec": "waybar-mpris --position --autofocus --order SYMBOL:TITLE --play '' --pause ''",
         "on-click": "ags",
-        // This option will switch between players on right click.
         "on-click-right": "killall ags",
         // The options below will switch the selected player on scroll
             // "on-scroll-up": "waybar-mpris --send player-next",
@@ -44,7 +41,6 @@
     },
 
     "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%a, %d %b, %I:%M %p}"
     },
 
@@ -142,9 +138,8 @@
     "custom/waybar-mpris": {
         "return-type": "json",
         "exec": "waybar-mpris --position --autofocus --order SYMBOL:TITLE:ARTIST --pause  --play ",
-        "on-click": "waybar-mpris --send toggle",
-        // This option will switch between players on right click.
-        "on-click-right": "waybar-mpris --send next",
+        "on-click": "ags",
+        "on-click-right": "killall ags",
         // The options below will switch the selected player on scroll
             // "on-scroll-up": "waybar-mpris --send player-next",
             // "on-scroll-down": "waybar-mpris --send player-prev",
@@ -153,5 +148,5 @@
             // "on-scroll-down": "waybar-mpris --send prev",
         "escape": true,
         "max-length": 30
-    }
+    },
 }]
