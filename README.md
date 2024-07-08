@@ -28,6 +28,7 @@ All my arch installation files and configurations to reproduce the installation.
 * firefox
 * btop
 * spotify
+* WebCord
 * visual-studio-code-bin
 * yay
 * wlr-randr
