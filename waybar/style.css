@@ -19,7 +19,7 @@ window#waybar.hidden {
     margin-right: 8px;
     border-radius: 10px;
     transition: none;
-    background: #36013f;
+    background: #36013F;
 }
 
 #workspaces button {
