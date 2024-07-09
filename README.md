@@ -15,6 +15,7 @@ All my arch installation files and configurations to reproduce the installation.
 * rofi-wayland
 * kitty 
 * zsh
+* wlogout
 
 # Packages
 * alsa
