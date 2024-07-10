@@ -59,6 +59,7 @@ All my arch installation files and configurations to reproduce the installation.
 - [ ] better lid close sleep
 - [x] power button actually does something
 - [ ] spicetify
+- [ ] install script
 
 # Credits/Inspiration
 * [Rose Pine GTK Theme](https://github.com/rose-pine/gtk) (from Rose Pine project)
