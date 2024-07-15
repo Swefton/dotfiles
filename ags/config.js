@@ -1,14 +1,10 @@
-import { Media } from "./Media.js"
-
-const calendar = Widget.Calendar({
-    hexpand: true,
-    hpack: "center",
-})
+import { Media } from "./modules/Media.js"
+import { Calendar } from "./modules/Calendar.js"
 
 const calendar_window = Widget.Window({
-    name: 'calendar',
+    name: 'Calendar',
     anchor: ['top'],
-    child: calendar,
+    child: Calendar(),
 })
 
 const mediaplayer = Widget.Window({
