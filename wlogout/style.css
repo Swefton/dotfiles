@@ -1,0 +1,56 @@
+* {
+	background-image: none;
+}
+
+window {
+	background-color: rgba(25, 23, 36, 0.6);
+}
+
+button {
+	color: #d4bff9;
+	background-color: rgba(17, 17, 27, 1);
+	outline-style: none;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 20%;
+	box-shadow: none;
+	text-shadow: none;
+	animation: gradient_f 20s ease-in infinite;
+}
+
+button:hover {
+	background-color: #6464c8;
+	animation: gradient_f 20s ease-in infinite;
+}
+
+#shutdown {
+	background-image: image(url("/usr/share/wlogout/assets/shutdown.svg"), url("/usr/share/wlogout/assets/shutdown.svg"));
+	border-radius: 20px 0 0 20px;
+	border: 1px solid #d4bff9;
+	border-right: none;
+}
+
+#lock {
+	background-image: image(url("/usr/share/wlogout/assets/lock.svg"), url("/usr/share/wlogout/assets/lock.svg"));
+	border-radius: 0 20px 20px 0;
+	border: 1px solid #d4bff9;
+	border-left: none;
+}
+
+#logout {
+	background-image: image(url("/usr/share/wlogout/assets/logout.svg"), url("/usr/share/wlogout/assets/logout.svg"));
+	border-top: 1px solid #d4bff9;
+	border-bottom: 1px solid #d4bff9;
+}
+
+#reboot {
+	background-image: image(url("/usr/share/wlogout/assets/reboot.svg"), url("/usr/share/wlogout/assets/reboot.svg"));
+	border-top: 1px solid #d4bff9;
+	border-bottom: 1px solid #d4bff9;
+}
+
+#windows {
+	background-image: image(url("/usr/share/wlogout/assets/windows.svg"), url("/usr/share/wlogout/assets/windows.svg"));
+	border-top: 1px solid #d4bff9;
+	border-bottom: 1px solid #d4bff9;
+}

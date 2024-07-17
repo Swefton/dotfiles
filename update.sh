@@ -10,3 +10,4 @@ cp -r ~/.config/spotify-flags.conf .
 cp -r ~/.config/swaylock .
 cp -r ~/.config/waybar .
 cp -r ~/.config/WebCord-flags.conf .
+cp -r ~/.config/wlogout .
