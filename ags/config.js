@@ -3,12 +3,14 @@ import { Calendar } from "./modules/Calendar.js"
 
 const calendar_window = Widget.Window({
     name: 'Calendar',
+    class_name: "calendar",
     anchor: ['top'],
     child: Calendar(),
 })
 
 const mediaplayer = Widget.Window({
     name: "mpris",
+    class_name: "media-player",
     anchor: ["top", "right"],
     child: Media(),
 })
