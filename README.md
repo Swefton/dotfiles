@@ -8,7 +8,7 @@ All my arch installation files and configurations to reproduce the installation.
 ![rofi](screenshots/rofi.png)
 
 # Desktop Environment
-* window manager: hyprland
+* window manager: hyprland-git (aur)
 * display manager: ly
 * waybar
 * ags
